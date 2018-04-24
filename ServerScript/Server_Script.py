@@ -1,7 +1,7 @@
 import os
 import shutil
 import Creating_Folders
-import Moving_Servers_to_Folders
+import Moving_Server_Folders
 
 #downloading the given servers 
 os.system('go get https://github.com/stellar/bridge-server') #retrieving the bridge server 

@@ -17,7 +17,7 @@ Creating_Folders.create_folder('./federation_server/')
 #Bridge Server Files
 Moving_Server_Folders.moving_server_files('bridge', 'bridge_server')
 Moving_Server_Folders.moving_server_files('bridge.cfg', 'bridge_server')
-Moving_Server_to_Folders.moving_server_files('bridge.service', 'bridge_server')
+Moving_Server_Folders.moving_server_files('bridge.service', 'bridge_server')
 #Compliance Server Files
 Moving_Servers_Folders.moving_server_files('compliance', 'compliance_server')
 Moving_Server_Folders.moving_server_files('compliance.cfg', 'compliance_server')

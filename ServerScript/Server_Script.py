@@ -4,9 +4,9 @@ import Creating_Folders
 import Moving_Server_Folders
 
 #downloading the given servers 
-os.system('go get github.com/SendFriend/stellar-backend/tree/master/bridge-server') #retrieving the bridge server 
-os.system('go get github.com/SendFriend/stellar-backend/tree/master/compliance-server') #retreving the compliance server 
-os.system('go get github.com/SendFriend/stellar-backend/tree/master/federation-server') #retrieving the federation server 
+os.system('env GIT_TERMINAL_PROMPT=1 go get github.com/SendFriend/stellar-backend/tree/master/bridge-server') #retrieving the bridge server 
+os.system('env GIT_TERMINAL_PROMPT=1 go get github.com/SendFriend/stellar-backend/tree/master/compliance-server') #retreving the compliance server 
+os.system('env GIT_TERMINAL_PROMPT=1 go get github.com/SendFriend/stellar-backend/tree/master/federation-server') #retrieving the federation server 
 
 #Creating three folders in the current directory for the servers 
 Creating_Folders.create_folder('./bridge_server/')

@@ -3,7 +3,7 @@ import os
 
 def moving_server_files(filename, server, directory): 
 	'''
-	This function moves files from the where the go get command 
+	This function copies files from the where the go get command 
 	places the retrieved/downloaded files 
 	and places them in the correct created directory. 
 	Inputs: filename - string, the name of the file that has to be moved; directory - string, 
@@ -21,7 +21,7 @@ def moving_server_files(filename, server, directory):
 	print(path, files) 
 
 	if filename in files: #check whether the file is in the files for the server
-			shutil.move(os.path.join(path, filename), os.path.join(destination, directory))
+			shutil.copyfile(os.path.join(path, filename), os.path.join(destination, directory))
 	else: 
 		print("The file you asked for is not in the directory of interest.")
 

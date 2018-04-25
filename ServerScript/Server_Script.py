@@ -29,9 +29,9 @@ Moving_Server_Folders.moving_server_files('federation.cfg', 'federation-server',
 Moving_Server_Folders.moving_server_files('federation.service', 'federation-server', 'federation_server')
 
 #Making symlinks between the service files and the location where systemctl files are stored in Ubuntu
-Symlink.symlink_files("bridge_server/bridge.service", "$HOME$/lib/systemd/system/") #symlink bridge.service file
-Symlink.symlink_files("compliance_server/compliance.service", "$HOME$/lib/systemd/system/") #symlink compliance.service file
-Symlink.symlink_files("federation_server/federation.service", "$HOME$/lib/systemd/system/") #symlink federation.service file
+Symlink.symlink_files("bridge_server/bridge.service", "/lib/systemd/system/") #symlink bridge.service file
+Symlink.symlink_files("compliance_server/compliance.service", "/lib/systemd/system/") #symlink compliance.service file
+Symlink.symlink_files("federation_server/federation.service", "/lib/systemd/system/") #symlink federation.service file
 
 
 

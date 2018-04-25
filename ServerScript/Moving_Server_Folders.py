@@ -16,12 +16,10 @@ def moving_server_files(filename, server, directory):
 
 	path = os.path.join(source, 'src/github.com/SendFriend/stellar-backend/' + server)
 
-	files = os.listdir(path) #represent all the files in the directory as a list
-
-	print(path, files) 
+	files = os.listdir(path) #represent all the files in the directory as a list 
 
 	if filename in files: #check whether the file is in the files for the server
-			shutil.copyfile(os.path.join(path, filename), os.path.join(destination, directory))
+			shutil.copy2(os.path.join(path, filename), os.path.join(destination, directory))
 	else: 
 		print("The file you asked for is not in the directory of interest.")
 

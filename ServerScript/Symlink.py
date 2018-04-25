@@ -14,4 +14,6 @@ def symlink_files(file, location):
 
 	file_path = os.path.join(current, file)
 
+	print(file_path, location)
+
 	os.symlink(file_path, location)

@@ -14,13 +14,15 @@ def moving_server_files(filename, server, directory):
 	
 	desination = os.getcwd() #get the current directory path, because it has the final location of the file
 
-	path = os.join(source, 'github.com/SendFriend/stellar-backend/' + )
-
+	path = os.join(source, 'github.com/SendFriend/stellar-backend/' + server)
+	print("PATH:")
+	print(path)
 	files = os.listdir(source) #represent all the files in the directory as a list
 
-	for file in files: 
-		if file == filename: #iterate through the files and if the given file is in the directory, move it to a local directory
-			shutil.move(os.path.join(source, file), os.path.join(destination, directory))
+	if filename in files: #iterate through the files and if the given file is in the directory, move it to a local directory
+			shutil.move(os.path.join(source, filename), os.path.join(destination, directory))
+	else: 
+		print("The file you asked for is not the directory of interest.")
 
 
 

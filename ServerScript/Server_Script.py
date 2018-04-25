@@ -15,17 +15,17 @@ Creating_Folders.create_folder('./federation_server/')
 
 #Move the files of of interest to the corresponding directories
 #Bridge Server Files
-Moving_Server_Folders.moving_server_files('bridge', 'bridge_server')
-Moving_Server_Folders.moving_server_files('bridge.cfg', 'bridge_server')
-Moving_Server_Folders.moving_server_files('bridge.service', 'bridge_server')
+Moving_Server_Folders.moving_server_files('bridge', 'bridge-server', 'bridge_server')
+Moving_Server_Folders.moving_server_files('bridge.cfg', 'bridge-server', 'bridge_server')
+Moving_Server_Folders.moving_server_files('bridge.service', 'bridge-server', 'bridge_server')
 #Compliance Server Files
-Moving_Server_Folders.moving_server_files('compliance', 'compliance_server')
-Moving_Server_Folders.moving_server_files('compliance.cfg', 'compliance_server')
-Moving_Server_Folders.moving_server_files('compliance.service', 'compliance_server')
+Moving_Server_Folders.moving_server_files('compliance', 'compliance-server', 'compliance_server')
+Moving_Server_Folders.moving_server_files('compliance.cfg', 'compliance-server', 'compliance_server')
+Moving_Server_Folders.moving_server_files('compliance.service','compliance-server', 'compliance_server')
 #Federation Server Files
-Moving_Server_Folders.moving_server_files('federation', 'federation_server')
-Moving_Server_Folders.moving_server_files('federation.cfg', 'federation_server')
-Moving_Server_Folders.moving_server_files('federation.service', 'federation_server')
+Moving_Server_Folders.moving_server_files('federation', 'federation-server', 'federation_server')
+Moving_Server_Folders.moving_server_files('federation.cfg', 'federation-server', 'federation_server')
+Moving_Server_Folders.moving_server_files('federation.service', 'federation-server', 'federation_server')
 
 
 

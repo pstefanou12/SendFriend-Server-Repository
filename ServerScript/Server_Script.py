@@ -2,6 +2,7 @@ import os
 import shutil
 import Creating_Folders
 import Moving_Server_Folders
+import Symlink
 
 #downloading the given servers 
 os.system('env GIT_TERMINAL_PROMPT=1 go get github.com/SendFriend/stellar-backend/tree/master/bridge-server') #retrieving the bridge server 
@@ -27,6 +28,10 @@ Moving_Server_Folders.moving_server_files('federation', 'federation-server', 'fe
 Moving_Server_Folders.moving_server_files('federation.cfg', 'federation-server', 'federation_server')
 Moving_Server_Folders.moving_server_files('federation.service', 'federation-server', 'federation_server')
 
+#Making symlinks between the service files and the location where systemctl files are stored in Ubuntu
+Symlink.symlink_files("ServerScript/bridge_server/bridge.service", "$HOME$/lib/systemd/system/") #symlink bridge.service file
+Symlink.symlink_files("ServerScript/compliance_server/compliance.service", "$HOME$/lib/systemd/system/") #symlink compliance.service file
+Symlink.symlink_files("ServerScript/federation_server/federation.service", "$HOME$/lib/systemd/system/") #symlink federation.service file
 
 
 

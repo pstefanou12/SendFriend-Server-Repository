@@ -18,7 +18,7 @@ def moving_server_files(filename, server, directory):
 	print("PATH:")
 	print(path)
 	files = os.listdir(source) #represent all the files in the directory as a list
-
+	print(files)
 	if filename in files: #iterate through the files and if the given file is in the directory, move it to a local directory
 			shutil.move(os.path.join(source, filename), os.path.join(destination, directory))
 	else: 

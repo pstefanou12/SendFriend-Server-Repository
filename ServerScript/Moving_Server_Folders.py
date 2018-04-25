@@ -21,7 +21,7 @@ def moving_server_files(filename, server, directory):
 	if filename in files: #check whether the file is in the files for the server
 			shutil.move(os.path.join(path, filename), os.path.join(destination, directory))
 	else: 
-		print("The file you asked for is not the directory of interest.")
+		print("The file you asked for is not in the directory of interest.")
 
 
 

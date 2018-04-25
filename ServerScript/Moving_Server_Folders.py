@@ -14,7 +14,7 @@ def moving_server_files(filename, server, directory):
 	
 	desination = os.getcwd() #get the current directory path, because it has the final location of the file
 
-	path = os.pathgit .join(source, 'src/github.com/SendFriend/stellar-backend/' + server)
+	path = os.path.join(source, 'src/github.com/SendFriend/stellar-backend/' + server)
 	print("PATH:")
 	print(path)
 	files = os.listdir(source) #represent all the files in the directory as a list

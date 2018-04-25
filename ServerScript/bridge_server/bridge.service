@@ -1,0 +1,12 @@
+[Unit]
+Description=Stellar Bridge Server
+
+[Service]
+Type=simple
+ExecStart=/home/haseeb/stellar-servers/bridge-server/bridge
+WorkingDirectory=/home/haseeb/stellar-servers/bridge-server
+WatchdogSec=30s
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

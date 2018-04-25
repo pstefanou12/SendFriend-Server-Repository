@@ -1,0 +1,12 @@
+[Unit]
+Description=Stellar Federation Server
+
+[Service]
+Type=simple
+ExecStart=/home/haseeb/stellar-servers/federation-server/federation
+WorkingDirectory=/home/haseeb/stellar-servers/federation-server
+WatchdogSec=30s
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

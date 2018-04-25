@@ -18,6 +18,8 @@ def moving_server_files(filename, server, directory):
 
 	files = os.listdir(path) #represent all the files in the directory as a list
 
+	print(path, files) 
+
 	if filename in files: #check whether the file is in the files for the server
 			shutil.move(os.path.join(path, filename), os.path.join(destination, directory))
 	else: 

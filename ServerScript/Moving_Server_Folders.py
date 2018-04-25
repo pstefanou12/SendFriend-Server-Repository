@@ -12,7 +12,7 @@ def moving_server_files(filename, server, directory):
 	'''
 	source = os.environ['GOPATH']
 	
-	desination = os.getcwd() #get the current directory path, because it has the final location of the file
+	destination = os.getcwd() #get the current directory path, because it has the final location of the file
 
 	path = os.path.join(source, 'src/github.com/SendFriend/stellar-backend/' + server)
 	print("PATH:")
